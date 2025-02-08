@@ -39,7 +39,7 @@ build Poetry-managed projects.
 %{__python3} -m zipfile -e build-3/*.whl build-3-test
 # use explicit plugins list for reliable builds (delete PYTEST_PLUGINS if empty)
 PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 \
-PYTEST_PLUGINS=mocker \
+PYTEST_PLUGINS=pytest_mock \
 %{__python3} -m pytest -o pythonpath="$PWD/build-3-test" tests
 %endif
 
