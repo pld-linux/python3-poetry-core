@@ -5,7 +5,7 @@
 Summary:	Poetry PEP 517 Build Backend
 Name:		python3-%{module}
 Version:	2.0.1
-Release:	3
+Release:	4
 License:	MIT
 Group:		Libraries/Python
 Source0:	https://pypi.debian.net/%{module}/poetry_core-%{version}.tar.gz
