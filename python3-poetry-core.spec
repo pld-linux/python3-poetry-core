@@ -1,8 +1,10 @@
+#
 # Conditional build:
 %bcond_without	tests	# unit tests
 
 %define		module	poetry-core
 Summary:	Poetry PEP 517 Build Backend
+Summary(pl.UTF-8):	Backend budowania PEP 517 z projektu Poetry
 Name:		python3-%{module}
 Version:	2.0.1
 Release:	4
@@ -28,6 +30,12 @@ A PEP 517 build backend implementation developed for Poetry. This
 project is intended to be a lightweight, fully compliant,
 self-contained package allowing PEP 517-compatible build frontends to
 build Poetry-managed projects.
+
+%description -l pl.UTF-8
+Implementacja backendu budowania PEP 517 stworzona dla projektu
+Poetry. Ten projekt ma być lekkim, w pełni zgodnym, samodzielnym
+pakietem, pozwalającym na używanie frontendów budowania zgodnych z PEP
+517 do budowania projektów zarządzanych przez Poetry.
 
 %prep
 %setup -q -n poetry_core-%{version}
